@@ -102,7 +102,7 @@ staffTable.append(currParent);
 $('#countdown-container').ClassyCountdown({
     theme: 'white',
     end: 1628344800000,
-    now: $.now(),
+    now: new Date().getTime(),
     days: {
         textCSS: 'font-family: Raleway'
     }
