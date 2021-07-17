@@ -70,10 +70,17 @@ var STAFF = [
         discord: 'xpoes#2892'
     }
 ];
-var NUM_COLS = 5;
+//var NUM_COLS = 5;
 
 var staffTable = $('#staff-table');
 var prototype = $('#cell-prototype');
+
+//var PROTO_BOX_WIDTH = prototype.width() + parseInt(prototype.css('marginLeft')) + parseInt(prototype.css('marginRight'));
+var PROTO_BOX_WIDTH = 200;
+var NUM_COLS = Math.floor(prototype.parent().width() / PROTO_BOX_WIDTH);
+console.log(NUM_COLS);
+console.log(PROTO_BOX_WIDTH);
+console.log(prototype.parent().width());
 
 //var numRows = Math.ceil(STAFF.length / NUM_COLS);
 var soFar = 0;
