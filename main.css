@@ -82,6 +82,25 @@ body {
     font-feature-settings:"lnum" 1;
 }
 
+.navbar-brand {
+    width: 10%;
+}
+
+.navbar-brand > img {
+    width: 80%;
+    mix-blend-mode: multiply;
+    filter: brightness(120%);
+}
+
+nav {
+    width: 100%;
+    display: block;
+}
+
+body {
+    min-width: fit-content;
+}
+
 @media (max-device-width: 1100px){
     #countdown-container {
         text-align: center;
@@ -129,4 +148,6 @@ body {
 
 .faq-question {
     padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

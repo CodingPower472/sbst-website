@@ -8,6 +8,10 @@ $('.nav-link').click(function(e) {
     $('#' + name).show();
 });
 
+$('.navbar-brand').click(function(e) {
+    $('a[name=home]').click();
+});
+
 var STAFF = [
     {
         name: 'David Jiang',
