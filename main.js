@@ -129,7 +129,7 @@ $.get('SBST_FAQ.txt')
         indiv = faq.split('Q:');
         for (var i = 1; i < indiv.length; i++) {
             var m = indiv[i].trim();
-            var s = m.split('\r\n');
+            var s = m.split('\n|\r\n');
             var q = s[0].replace('Q:', '').trim();
             var a = s[1].replace('A:', '').trim();
             var elem = $('<div class="faq-question  card card-body" data-role="collapsible"></div>');
