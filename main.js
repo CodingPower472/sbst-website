@@ -12,69 +12,61 @@ $('.navbar-brand').click(function(e) {
     $('a[name=home]').click();
 });
 
+$('#join-discord').click(function(e) {
+    window.open('https://discord.gg/sa3yyzeeEu', '_blank')
+});
+
 var STAFF = [
     {
-        name: 'David Jiang',
-        role: 'Public Relations',
-        pic: 'https://scibowlleague.com/static/images/team/david.jpg',
-        discord: 'xpoes#2892'
+        name: 'Constantine Kyprianou',
+        role: 'Executive',
+        pic: 'profile.jpg',
+        discord: 'con1596#1195'
     },
     {
-        name: 'David Jiang',
-        role: 'Public Relations',
-        pic: 'https://scibowlleague.com/static/images/team/david.jpg',
-        discord: 'xpoes#2892'
+        name: 'Bill Zhao',
+        role: 'Writer',
+        pic: 'bill.png',
+        discord: 'Aquatic Seatard#8425'
     },
     {
-        name: 'David Jiang',
-        role: 'Public Relations',
-        pic: 'https://scibowlleague.com/static/images/team/david.jpg',
-        discord: 'xpoes#2892'
+        name: 'Naveen Mukkatt',
+        role: 'Writer',
+        pic: 'naveen.jpg',
+        discord: 'navin mudkat#7056'
     },
     {
-        name: 'David Jiang',
-        role: 'Public Relations',
-        pic: 'https://scibowlleague.com/static/images/team/david.jpg',
-        discord: 'xpoes#2892'
+        name: 'Sanjay Suresh',
+        role: 'Writer',
+        pic: 'sanjay.jpg',
+        discord: 'sanj#0606'
     },
     {
-        name: 'David Jiang',
-        role: 'Public Relations',
-        pic: 'https://scibowlleague.com/static/images/team/david.jpg',
-        discord: 'xpoes#2892'
+        name: 'Sean Fei',
+        role: 'Writer',
+        pic: 'sean.png',
+        discord: 'Sean29#8992'
     },
     {
-        name: 'David Jiang',
-        role: 'Public Relations',
-        pic: 'https://scibowlleague.com/static/images/team/david.jpg',
-        discord: 'xpoes#2892'
+        name: 'Gideon Tzafrifri',
+        role: 'Playtester',
+        pic: 'gideon.jpg',
+        discord: 'GidTheKid2#5584'
     },
     {
-        name: 'David Jiang',
-        role: 'Public Relations',
-        pic: 'https://scibowlleague.com/static/images/team/david.jpg',
-        discord: 'xpoes#2892'
+        name: 'Geoffrey Wu',
+        role: 'Playtester',
+        pic: 'geoff.jpg',
+        discord: 'thedoge#1189'
     },
     {
-        name: 'David Jiang',
-        role: 'Public Relations',
-        pic: 'https://scibowlleague.com/static/images/team/david.jpg',
-        discord: 'xpoes#2892'
-    },
-    {
-        name: 'David Jiang',
-        role: 'Public Relations',
-        pic: 'https://scibowlleague.com/static/images/team/david.jpg',
-        discord: 'xpoes#2892'
-    },
-    {
-        name: 'David Jiang',
-        role: 'Public Relations',
-        pic: 'https://scibowlleague.com/static/images/team/david.jpg',
-        discord: 'xpoes#2892'
+        name: 'Judson Lam',
+        role: 'Playtester',
+        pic: 'judson.png',
+        discord: 'jlam999#6300'
     }
 ];
-var NUM_COLS = 5;
+var NUM_COLS = 4;
 
 $(function() {
 var staffTable = $('#staff-table');
@@ -115,7 +107,7 @@ staffTable.append(currParent);
 
 $('#countdown-container').ClassyCountdown({
     theme: 'white',
-    end: 1628344800000,
+    end: 1628344800000 + 7*24*3600*1000,
     now: new Date().getTime(),
     days: {
         textCSS: 'font-family: Raleway'

@@ -1,10 +1,23 @@
+
+.staff-pic {
+    height: 200px;
+}
+
+#join-discord {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+#discord-logo {
+    margin-right: 10px;
+}
+
 .nav-item {
     margin-right: 15px;
     font-size: 18px;
-}
-
-#staff-table img {
-    width: 200px;
 }
 
 #staff-table {
